@@ -1,19 +1,13 @@
 # Bible Verses Website ✨
 
-A simple, aesthetic website that displays random Bible verses from a curated JSON file.  
-Features include:
+A sleek, aesthetic website that displays random Bible verses from a curated JSON file.  
+Features:
 - 🎲 Random verse generator
+- 📅 Daily verse
 - 🌙 Dark/Light mode toggle
 - ⭐ Favorites list (saved in browser storage)
 - 📋 Copy verse button
-- Smooth animations and responsive design
-
-## Project Structure
-
-## How It Works
-- `verses.json` contains ~200 Bible verses in JSON format.
-- `script.js` loads the verses and displays a random one when clicked.
-- Users can save favorites, copy verses, and switch between dark/light mode.
+- Smooth animations and premium design
 
 ## Hosting
 This project is hosted on **GitHub Pages**:
