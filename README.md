@@ -9,12 +9,5 @@ Features:
 - 📋 Copy verse button
 - Smooth animations and premium design
 
-## Hosting
-This project is hosted on **GitHub Pages**:
-1. Push your code to GitHub.
-2. Go to **Settings → Pages → Source → main branch → /root**.
-3. Your site will be live at:  
-   `https://allanpetergiffy.github.io/bible-website`
-
 ## License
 This project uses the MIT License (see LICENSE file).
