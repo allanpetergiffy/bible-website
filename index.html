@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Particle background -->
+  <canvas id="particles"></canvas>
+
   <header>
     <h1>✨ Bible Verses ✨</h1>
     <nav>
       <button onclick="getRandomVerse()">🎲 Random Verse</button>
+      <button onclick="dailyVerse()">📅 Daily Verse</button>
       <button onclick="showFavorites()">⭐ Favorites</button>
-      <button onclick="toggleDarkMode()">🌙 Toggle Mode</button>
     </nav>
   </header>
 
@@ -25,5 +28,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="particles.js"></script>
 </body>
 </html>
