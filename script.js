@@ -17,14 +17,27 @@ function getRandomVerse() {
   }
   let randomIndex = Math.floor(Math.random() * verses.length);
   let verse = verses[randomIndex];
+  displayVerse(verse, randomIndex);
+}
+
+// Daily verse
+function dailyVerse() {
+  let today = new Date().getDate();
+  let verse = verses[today % verses.length];
+  displayVerse(verse);
+}
+
+// Display verse card
+function displayVerse(verse, index = null) {
   document.getElementById("content").innerHTML = `
     <div class="verse-card">
       <h2>${verse.reference}</h2>
       <p>${verse.text}</p>
-      <button onclick="addFavorite(${randomIndex})">⭐ Add to Favorites</button>
+      ${index !== null ? `<button onclick="addFavorite(${index})">⭐ Add to Favorites</button>` : ""}
       <button onclick="copyVerse('${verse.reference}: ${verse.text}')">📋 Copy</button>
     </div>
   `;
+  scrollTopSmooth();
 }
 
 // Favorites
@@ -51,7 +64,8 @@ function copyVerse(text) {
   alert("Verse copied to clipboard!");
 }
 
-// Dark mode toggle
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
+// Smooth scroll to top
+function scrollTopSmooth() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
