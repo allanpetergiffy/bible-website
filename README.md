@@ -9,5 +9,8 @@ Features:
 - 📋 Copy verse button
 - Smooth animations and premium design
 
+- link 👇
+- https://allanpetergiffy.github.io/bible-website/
+
 ## License
 This project uses the MIT License (see LICENSE file).
